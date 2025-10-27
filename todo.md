@@ -30,6 +30,8 @@
 - [x] Change theme color from amber to #49879c
 - [x] Remove emoji from hero section
 - [x] Make community section cards equal size and aligned
+- [x] Replace Triple Cross Holdings text badge with logo in hero section
+- [x] Add Triple Cross logo next to Noah Armstrong name in navigation
 
 ## Animation & Design
 - [x] Scroll-based reveal animations (Framer Motion)

@@ -119,7 +119,14 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <motion.h1 className="text-2xl font-bold text-[#49879c]">Noah Armstrong</motion.h1>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/triple-cross-holdings-logo.png" 
+              alt="Triple Cross Holdings" 
+              className="h-8 object-contain"
+            />
+            <motion.h1 className="text-2xl font-bold text-[#49879c]">Noah Armstrong</motion.h1>
+          </div>
           <a
             href="mailto:deals@noah-armstrong.com"
             className="text-[#49879c] hover:text-[#5a9fb8] transition-colors"
@@ -156,9 +163,11 @@ export default function Home() {
           animate="visible"
         >
           <motion.div variants={itemVariants} className="mb-6">
-            <span className="inline-block px-4 py-2 bg-[#49879c]/20 border border-[#49879c]/50 rounded-full text-[#49879c] text-sm font-semibold">
-              Triple Cross Holdings
-            </span>
+            <img 
+              src="/triple-cross-holdings-logo.png" 
+              alt="Triple Cross Holdings" 
+              className="h-16 object-contain mx-auto"
+            />
           </motion.div>
 
           <motion.h1
