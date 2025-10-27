@@ -32,6 +32,7 @@
 - [x] Make community section cards equal size and aligned
 - [x] Replace Triple Cross Holdings text badge with logo in hero section
 - [x] Add Triple Cross logo next to Noah Armstrong name in navigation
+- [x] Fix logo file - copy correct version to public directory
 
 ## Animation & Design
 - [x] Scroll-based reveal animations (Framer Motion)
