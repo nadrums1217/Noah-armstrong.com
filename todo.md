@@ -23,6 +23,7 @@
 - [x] Update Mount Everest section with exact vision text
 - [x] Refine "Why Work With Me" messaging
 - [x] Add social proof section with team photos
+- [x] Replace combined logo image with individual high-quality logos (Triple Cross, Owners Club, SUBTO)
 
 ## Animation & Design
 - [x] Scroll-based reveal animations (Framer Motion)

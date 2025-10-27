@@ -187,7 +187,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Partnership Logos Section */}
+      {/* Memberships Section */}
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-black border-y border-amber-900/30">
         <div className="max-w-6xl mx-auto">
           <motion.h2
@@ -195,22 +195,41 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center text-gray-400 text-sm font-semibold uppercase tracking-widest mb-8"
+            className="text-center text-gray-400 text-sm font-semibold uppercase tracking-widest mb-12"
           >
-            Trusted Partnerships
+            Active Member
           </motion.h2>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center"
+            className="flex justify-center items-center gap-12 flex-wrap"
           >
-            <img 
-              src="/logos.png" 
-              alt="Partnership logos: SUBTO, Owners Club, Triple Cross Holdings" 
-              className="max-w-full h-auto max-h-32 object-contain"
-            />
+            <div className="flex flex-col items-center gap-3">
+              <img 
+                src="/owners-club-logo.png" 
+                alt="Owners Club member" 
+                className="h-20 object-contain"
+              />
+              <p className="text-sm text-gray-400">Owners Club Member</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <img 
+                src="/subto-logo.png" 
+                alt="SUBTO member" 
+                className="h-20 object-contain"
+              />
+              <p className="text-sm text-gray-400">SUBTO Member</p>
+            </div>
+            <div className="flex flex-col items-center gap-3">
+              <img 
+                src="/triple-cross-logo.png" 
+                alt="Triple Cross Holdings" 
+                className="h-20 object-contain"
+              />
+              <p className="text-sm text-gray-400">Triple Cross Holdings</p>
+            </div>
           </motion.div>
         </div>
       </section>
