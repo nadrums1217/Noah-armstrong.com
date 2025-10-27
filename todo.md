@@ -25,6 +25,11 @@
 - [x] Add social proof section with team photos
 - [x] Replace combined logo image with individual high-quality logos (Triple Cross, Owners Club, SUBTO)
 - [x] Remove Triple Cross Holdings logo from Active Member section (it's the company logo, not a membership)
+- [x] Remove Car Wash Development Team from footer, add Armstrong Rentals and NJ360 Virtual Tours
+- [x] Verify and complete buy box criteria from noahsbuybox.com
+- [x] Change theme color from amber to #49879c
+- [x] Remove emoji from hero section
+- [x] Make community section cards equal size and aligned
 
 ## Animation & Design
 - [x] Scroll-based reveal animations (Framer Motion)
