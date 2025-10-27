@@ -187,27 +187,72 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* About Noah Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-amber-950/10 to-black">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
+      {/* Partnership Logos Section */}
+      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-black border-y border-amber-900/30">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mb-12"
+            className="text-center text-gray-400 text-sm font-semibold uppercase tracking-widest mb-8"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-amber-400">About Me</h2>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm Noah Armstrong, an entrepreneur and investor focused on building and scaling high-performing assets across real estate, business, and service-based industries. I lead <span className="text-amber-400 font-semibold">Triple Cross Holdings</span>, where we acquire multifamily, self-storage, and car wash properties throughout the southern U.S. Our strategy centers on creative financing, long-term ownership, and operational excellence.
-            </p>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I also co-head the <span className="text-amber-400 font-semibold">Clean Start Car Wash Development Team</span>, where we identify, underwrite, and secure land for new express tunnel projects. Our team focuses on high-traffic, high-growth markets and partners with experienced operators to bring each site from concept to completion efficiently.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Beyond real estate, I'm involved in business acquisitions and the growth of a professional golf organization, where my focus is on improving systems, branding, and sponsor engagement. Across every venture, my goal is simple — build sustainable, profitable frameworks that create lasting value.
-            </p>
+            Trusted Partnerships
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <img 
+              src="/logos.png" 
+              alt="Partnership logos: SUBTO, Owners Club, Triple Cross Holdings" 
+              className="max-w-full h-auto max-h-32 object-contain"
+            />
           </motion.div>
+        </div>
+      </section>
+
+      {/* About Noah Section */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-amber-950/10 to-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-amber-400">About Me</h2>
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                I'm Noah Armstrong, an entrepreneur and investor focused on building and scaling high-performing assets across real estate, business, and service-based industries. I lead <span className="text-amber-400 font-semibold">Triple Cross Holdings</span>, where we acquire multifamily, self-storage, and car wash properties throughout the southern U.S. Our strategy centers on creative financing, long-term ownership, and operational excellence.
+              </p>
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                I also co-head a <span className="text-amber-400 font-semibold">Car Wash Development Team</span>, where we identify, underwrite, and secure land for new express tunnel projects. Our team focuses on high-traffic, high-growth markets and partners with experienced operators to bring each site from concept to completion efficiently. We welcome Owners Club and Zero Down 2.0 members to partner with us to use their vouchers.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Beyond real estate, I'm involved in business acquisitions and the growth of a professional golf organization, where my focus is on improving systems, branding, and sponsor engagement. Across every venture, my goal is simple — build sustainable, profitable frameworks that create lasting value.
+              </p>
+            </motion.div>
+
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex justify-center"
+            >
+              <img 
+                src="/noah-solo.jpg" 
+                alt="Noah Armstrong" 
+                className="rounded-lg shadow-2xl shadow-amber-500/20 max-w-sm w-full h-auto"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -271,6 +316,63 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+      </section>
+
+      {/* Social Proof Section - Team Photos */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-amber-950/10 to-black">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-bold mb-16 text-center text-amber-400"
+          >
+            Our Community
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* With Pace & Jamil */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="bg-amber-950/20 border-amber-900/50 overflow-hidden hover:border-amber-400/50 transition-all hover:shadow-lg hover:shadow-amber-500/10">
+                <img 
+                  src="/noah-with-pace-jamil.jpg" 
+                  alt="Noah with Pace Morby and Jamil Damji" 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-amber-400 mb-2">Building Partnerships</h3>
+                  <p className="text-gray-300">Connected with industry leaders focused on creative financing and deal flow.</p>
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Owners Club Meetup */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="bg-amber-950/20 border-amber-900/50 overflow-hidden hover:border-amber-400/50 transition-all hover:shadow-lg hover:shadow-amber-500/10">
+                <img 
+                  src="/owners-club-meetup.jpg" 
+                  alt="Owners Club community meetup" 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-amber-400 mb-2">Owners Club Community</h3>
+                  <p className="text-gray-300">Part of a thriving community of entrepreneurs and investors committed to building wealth together.</p>
+                </div>
+              </Card>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -353,13 +455,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold text-amber-400 mb-4">Noah Armstrong</h3>
-              <p className="text-gray-400">Building sustainable, profitable frameworks that create lasting value.</p>
+              <p className="text-gray-400">Building sustainable, profitable frameworks that create lasting value and help others climb their mountain.</p>
             </div>
             <div>
               <h3 className="text-xl font-bold text-amber-400 mb-4">Companies</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Triple Cross Holdings</li>
-                <li>Clean Start Car Wash Development</li>
+                <li>Car Wash Development Team</li>
               </ul>
             </div>
             <div>
