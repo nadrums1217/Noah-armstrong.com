@@ -24,6 +24,7 @@
 - [x] Refine "Why Work With Me" messaging
 - [x] Add social proof section with team photos
 - [x] Replace combined logo image with individual high-quality logos (Triple Cross, Owners Club, SUBTO)
+- [x] Remove Triple Cross Holdings logo from Active Member section (it's the company logo, not a membership)
 
 ## Animation & Design
 - [x] Scroll-based reveal animations (Framer Motion)

@@ -222,14 +222,6 @@ export default function Home() {
               />
               <p className="text-sm text-gray-400">SUBTO Member</p>
             </div>
-            <div className="flex flex-col items-center gap-3">
-              <img 
-                src="/triple-cross-logo.png" 
-                alt="Triple Cross Holdings" 
-                className="h-20 object-contain"
-              />
-              <p className="text-sm text-gray-400">Triple Cross Holdings</p>
-            </div>
           </motion.div>
         </div>
       </section>
