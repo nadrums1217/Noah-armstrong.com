@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, deals, InsertDeal } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,23 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function createDeal(deal: InsertDeal) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot create deal: database not available");
+    throw new Error("Database not available");
+  }
+
+  const result = await db.insert(deals).values(deal);
+  return result;
+}
+
+export async function getAllDeals() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get deals: database not available");
+    return [];
+  }
+
+  return await db.select().from(deals);
+}
