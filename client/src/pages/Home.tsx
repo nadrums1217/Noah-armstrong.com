@@ -66,7 +66,7 @@ const buyBoxItems = [
     ],
   },
   {
-    title: "RV Parks",
+    title: "RV or Mobile Home Parks",
     icon: Building2,
     criteria: [
       "15+ pads",
